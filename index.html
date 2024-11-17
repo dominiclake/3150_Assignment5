@@ -3,6 +3,7 @@
 
     <head>
         <title>Dom's Used Cars</title>
+        <link rel="stylesheet" href="styles/styles.css">
         <script src="scripts/usedCars.js" defer></script>
         <script src="scripts/script.js" defer></script>
     </head>
@@ -14,6 +15,8 @@
     <body>
 
         <form class="filter_bar">
+
+            <p>Filter</p>
 
             <div class="year">
                 <input type="text" id="min_year" placeholder="Minimum Year">
@@ -44,7 +47,17 @@
             </div>
         </form>
 
-        <div class="product_cards" id="product_cards"></div>
+        <div class="product_cards" id="product_cards">
+            <div class="card">
+                <p>year</p>
+                <p>make model</p>
+                <p># miles</p>
+                <p>$price</p>
+                <p>color</p>
+                <p>gas mileage</p>
+            </div>
+
+        </div>
 
     </body>
 </html>
