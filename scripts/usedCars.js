@@ -7,7 +7,7 @@ window.usedCars = [
     price: 18000,
     color: "Silver",
     gasMileage: "25 mpg city, 35 mpg highway",
-    img: "..\assets\img\camry.jpg",
+    img: "../assets/img/camry.jpg",
   },
   {
     year: 2016,
