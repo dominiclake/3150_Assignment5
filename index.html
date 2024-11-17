@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Dom's Used Cars</title>
+        <script src="scripts/script.js" defer></script>
+        <script src="scripts/usedCars.js" defer></script>
+    </head>
+
+    <header>
+        <p>Dom's Used Cars</p>
+    </header>
+
+    <body>
+
+        <form class="filter_bar">
+
+            <div class="year">
+                <input type="text" id="min_year" placeholder="Minimum Year">
+                <p> - </p>
+                <input type="text" id="max_year" placeholder="Maximum Year">
+            </div>
+
+            <div class="make">
+                <select id="make" placeholder="Make">
+                    <option>Make</option>
+                </select>
+            </div>
+
+            <div class="mileage">
+                <input type="number" id="mileage" placeholder="Max Mileage">
+            </div>
+
+            <div class="price">
+                <input type="text" id="min_price" placeholder="Minimum Price">
+                <p> - </p>
+                <input type="text" id="max_price" placeholder="Maximum Price">
+            </div>
+
+            <div class="color">
+                <select id="color">
+                    <option>Color</option>
+                </select>
+            </div>
+        </form>
+
+        <div class="product_cards" id="product_cards">
+            
+        </div>
+
+    </body>
+</html>
