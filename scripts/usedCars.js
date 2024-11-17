@@ -7,6 +7,7 @@ window.usedCars = [
     price: 18000,
     color: "Silver",
     gasMileage: "25 mpg city, 35 mpg highway",
+    img: "../assets/img/camry.jpg",
   },
   {
     year: 2016,
@@ -16,6 +17,7 @@ window.usedCars = [
     price: 14000,
     color: "White",
     gasMileage: "30 mpg city, 40 mpg highway",
+    img: "../assets/img/civic.avif",
   },
   {
     year: 2017,
@@ -25,6 +27,7 @@ window.usedCars = [
     price: 16000,
     color: "Black",
     gasMileage: "28 mpg city, 38 mpg highway",
+    img: "../assets/img/fusion.jpg",
   },
   {
     year: 2019,
@@ -34,6 +37,7 @@ window.usedCars = [
     price: 17000,
     color: "Blue",
     gasMileage: "27 mpg city, 36 mpg highway",
+    img: "../assets/img/altima.jpg",
   },
   {
     year: 2015,
@@ -43,6 +47,7 @@ window.usedCars = [
     price: 12000,
     color: "Red",
     gasMileage: "25 mpg city, 37 mpg highway",
+    img: "../assets/img/malibu.jpg",
   },
   // Additional entries:
   {
@@ -53,6 +58,7 @@ window.usedCars = [
     price: 15000,
     color: "Gray",
     gasMileage: "29 mpg city, 40 mpg highway",
+    img: "../assets/img/passat.jpg",
   },
   {
     year: 2020,
@@ -62,6 +68,7 @@ window.usedCars = [
     price: 16000,
     color: "Silver",
     gasMileage: "30 mpg city, 41 mpg highway",
+    img: "../assets/img/elantra.jpg",
   },
   {
     year: 2014,
@@ -71,6 +78,7 @@ window.usedCars = [
     price: 14000,
     color: "Green",
     gasMileage: "22 mpg city, 30 mpg highway",
+    img: "../assets/img/outback.jpg",
   },
   {
     year: 2017,
@@ -80,6 +88,7 @@ window.usedCars = [
     price: 19000,
     color: "Blue",
     gasMileage: "24 mpg city, 31 mpg highway",
+    img: "../assets/img/cx5.jpg",
   },
   {
     year: 2018,
@@ -89,6 +98,7 @@ window.usedCars = [
     price: 17000,
     color: "White",
     gasMileage: "22 mpg city, 29 mpg highway",
+    img: "../assets/img/sorento.jpg",
   },
   // Five more entries:
   {
@@ -99,6 +109,7 @@ window.usedCars = [
     price: 24000,
     color: "Black",
     gasMileage: "19 mpg city, 30 mpg highway",
+    img: "../assets/img/challenger.jpg",
   },
   {
     year: 2017,
@@ -108,6 +119,7 @@ window.usedCars = [
     price: 32000,
     color: "Red",
     gasMileage: "19 mpg city, 27 mpg highway",
+    img: "../assets/img/xt5.jpg",
   },
   {
     year: 2018,
@@ -117,6 +129,7 @@ window.usedCars = [
     price: 38000,
     color: "Blue",
     gasMileage: "18 mpg city, 23 mpg highway",
+    img: "../assets/img/fpace.jpg",
   },
   {
     year: 2019,
@@ -126,6 +139,7 @@ window.usedCars = [
     price: 55000,
     color: "Black",
     gasMileage: "Electric (370 miles per charge)",
+    img: "../assets/img/models.jpg",
   },
   {
     year: 2020,
@@ -135,6 +149,7 @@ window.usedCars = [
     price: 68000,
     color: "White",
     gasMileage: "20 mpg city, 26 mpg highway",
+    img: "../assets/img/cayenne.jpeg",
   },
   {
     year: 2017,
@@ -144,6 +159,7 @@ window.usedCars = [
     price: 26000,
     color: "White",
     gasMileage: "21 mpg city, 30 mpg highway",
+    img: "../assets/img/es.jpg",
   },
   {
     year: 2016,
@@ -153,5 +169,6 @@ window.usedCars = [
     price: 27000,
     color: "Black",
     gasMileage: "23 mpg city, 34 mpg highway",
+    img: "../assets/img/5series.jpg",
   },
 ];

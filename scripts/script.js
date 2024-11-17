@@ -8,6 +8,7 @@ function displayCars(cars){
         card.className = "card";
 
         card.innerHTML = `
+        <img src="${car.img}" alt="${car.make} ${car.model}">
         <p>${car.year} ${car.make} ${car.model}</p>
         <p>${car.mileage} miles</p>
         <p>$${car.price}</p>
@@ -48,26 +49,43 @@ function displayColors(cars){
 }
 
 function filterCars(){
-    const minYear = parseInt(document.getElementById("min_year").value || 0);
-    const maxYear = parseInt(document.getElementById("max_year").value || Infinity);
+    productCards.innerHTML = "";
+    const minYear = parseInt(document.getElementById("min_year").value) || 0;
+    const maxYear = parseInt(document.getElementById("max_year").value) || Infinity;
     const make = document.getElementById("make").value;
     const maxMileage = parseInt(document.getElementById("mileage").value) || Infinity;
     const minPrice = parseInt(document.getElementById("min_price").value) || 0;
     const maxPrice = parseInt(document.getElementById("max_price").value) || Infinity;
     const color = document.getElementById("color").value;
 
-    const filteredCars = window.usedcars.filter(car =>{
+    const filteredCars = window.usedCars.filter(car =>{
         return(
             car.year >= minYear &&
             car.year <= maxYear &&
-            (make == "" || car.make == make) &&
+            (make == "" || car.make === make) &&
             car.mileage <= maxMileage &&
             car.price >= minPrice &&
             car.price <= maxPrice &&
-            (color == "" || color == car.color)
+            (color == "" || color === car.color)
         );
-    })
-    displayCars(filteredCars);
+    });
+
+    if(filteredCars.length === 0){
+        productCards.innerHTML = "<p>No cars found. Update your filters and try again.</p>";
+    }
+    else{
+        displayCars(filteredCars);
+    }
+}
+
+function showFilters(){
+    document.getElementById("filter_bar").style.display = "flex";
+    document.getElementById("show_filter_btn").style.display = "none";
+}
+
+function hideFilters(){
+    document.getElementById("filter_bar").style.display = "none";
+    document.getElementById("show_filter_btn").style.display = "flex";
 }
 
 document.getElementById("filter_button").addEventListener("click", filterCars);

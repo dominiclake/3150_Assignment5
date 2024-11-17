@@ -27,10 +27,9 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 2px solid black;
-    border-radius: 30%;
     margin: 100px;
     padding: 30px;
+    display: none;
 }
 
 .filter_bar >p{
@@ -75,9 +74,43 @@ body{
     border: 2px solid black;
     border-radius: 20px;
     margin: 50px;
+    max-width: 300px;
+    transition-duration: 125ms;
 }
 
 .card p{
     font-size: 20px;
     color: #eeede7;
+}
+
+.card img{
+    width: 300px;
+    height: 200px;
+}
+
+.card:hover{
+    padding: 30px;
+    margin: 40px;
+}
+
+button{
+    margin: 50px 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #868b8e;
+    color: #eeede7;
+    font-size: 80%;
+    transition-duration: 125ms;
+}
+
+button:hover{
+    padding: 13px;
+    margin: 47px 7px;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
 }

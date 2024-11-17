@@ -14,7 +14,9 @@
 
     <body>
 
-        <form class="filter_bar">
+        <button onclick="showFilters()" id="show_filter_btn">Show Filters</button>
+
+        <form id="filter_bar" class="filter_bar">
 
             <p>Filter</p>
 
@@ -42,11 +44,15 @@
 
             <div class="color">
                 <select id="color">
-                    <option>Color</option>
+                    <option value = "">Color</option>
                 </select>
             </div>
 
-            <button id="filter_button">Apply</button>
+            <div class="buttons">
+                <button id="filter_button" type="button">Apply</button>
+                <button>Reset</button>
+                <button onclick="hideFilters()" type="button" id="hide_filter_btn">Hide Filters</button>
+            </div>
         </form>
 
         <div class="product_cards" id="product_cards"></div>
