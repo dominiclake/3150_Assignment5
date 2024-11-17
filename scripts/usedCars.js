@@ -156,4 +156,4 @@ const usedCars = [
   },
 ];
 
-module.exports = usedCars;
+window.usedCars = usedCars;

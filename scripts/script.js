@@ -10,14 +10,14 @@ function displayCars(cars){
         card.innerHTML = `
         <p>${car.year}</p>
         <p>${car.make} ${car.model}</p>
-        <p>${mileage} miles</p?
-        <p>$${price}</p>
-        <p>${color}</p>
-        <p>${gasMileage}</p>
+        <p>${car.mileage} miles</p?
+        <p>$${car.price}</p>
+        <p>${car.color}</p>
+        <p>${car.gasMileage}</p>
         `;
 
         productCards.appendChild(card);
     })
 }
 
-displayCars(usedCars);
+displayCars(window.usedCars);
