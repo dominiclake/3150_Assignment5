@@ -1,4 +1,4 @@
-const usedCars = [
+window.usedCars = [
   {
     year: 2018,
     make: "Toyota",
@@ -155,5 +155,3 @@ const usedCars = [
     gasMileage: "23 mpg city, 34 mpg highway",
   },
 ];
-
-window.usedCars = usedCars;
